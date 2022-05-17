@@ -1,5 +1,4 @@
 # Welcome
 
-press "A" to toggle chromevox, "B" to toggle highcontrast
-press "A+B" to sleep
-tap logo to crash
+Use A to cycle through options and B to select.
+Press the logo to sleep your ChromeOS Device
