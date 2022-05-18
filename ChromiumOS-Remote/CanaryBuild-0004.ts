@@ -369,8 +369,7 @@ namespace chrome {
         media.sendCode(
             MediaKey.next
         )
-    }
-    //% block="Go to the previous track" group='Media'
+    }//% block="Go to the previous track" group='Media'
     export function prevTrack() {
         media.sendCode(
             MediaKey.previous
@@ -759,14 +758,7 @@ namespace chrome {
     }
     //% block="toggle caps lock"
     export function toggleCapsLock() {
-        shortcut(
-            false,
-            true,
-            false,
-            keyboard.modifiers(
-                keyboard._Modifier.windows
-            )
-        )
+        shortcut(false,true,true,"")
     }
     //% block="induce browser crash for realz" advanced=true
     export function induceBrowserCrashForRealz() {
