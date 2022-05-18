@@ -500,7 +500,15 @@ namespace chrome {
         ]
         let letters = 'abcdefghijklmnopqrstuuvwxyz';
         for (let i = 0; i < text.length; i++) {
-            if (letters.indexOf(text[i].toLowerCase()) > -1) {
+            if (text[i] == ":") {
+                shortcut(
+                    false,
+                    false,
+                    false,
+                    ":",
+                    true
+                )
+            } else if (letters.indexOf(text[i].toLowerCase()) > -1) {
                 if (text[i].toLowerCase() != text[i]) {
                     keyboard.sendString(
                         keyboard.modifiers(keyboard._Modifier.shift) + text[i].toLowerCase()
@@ -515,14 +523,6 @@ namespace chrome {
                     keyboard.modifiers(
                         keyboard._Modifier.shift
                     ) + lower[Object.keys(upper).indexOf(text[i])]
-                )
-            }else if(text[i]==":"){
-                shortcut(
-                    false,
-                    false,
-                    false,
-                    ":",
-                    true
                 )
             } else {
                 keyboard.sendString(text[i])
