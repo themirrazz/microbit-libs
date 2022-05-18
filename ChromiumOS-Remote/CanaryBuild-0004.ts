@@ -369,7 +369,8 @@ namespace chrome {
         media.sendCode(
             MediaKey.next
         )
-    }//% block="Go to the previous track" group='Media'
+    }
+    //% block="Go to the previous track" group='Media'
     export function prevTrack() {
         media.sendCode(
             MediaKey.previous
