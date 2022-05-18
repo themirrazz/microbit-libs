@@ -22,3 +22,7 @@ start diagnostics - shows CrOS Diagnostics
 create new workspace - creates a new workspace (or desk, as Google calls it)
 inspect site - opens the Chrome DevTools
 induce browser crash for realz - crashes the device. Equivalent of visiting `chrome://inducebrowsercrashforrealz`.
+
+
+Sample Projects:
+<https://makecode.microbit.org/_eX6YudiYeahp> Control media playback and volume!
